@@ -1,9 +1,9 @@
 import React from 'react';
 
-function Index(props) {
+function Chat () {
     return (
-        <div></div>
+        <div>Chat</div>
     );
 }
 
-export default Index;
+export default Chat;

@@ -5,7 +5,7 @@ import Header from "@/components/customHeader";
 function Chat () {
     const chatProps = useMultiChatLogic(
         import.meta.env.VITE_PROJECT_ID,
-        "tesuser",
+        "testuser",
         "1234"
     )
     return (

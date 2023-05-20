@@ -5,8 +5,10 @@ function App() {
   return <div className="app">
     <BrowserRouter>
       <Routes>
+        <Route path="/" element={<Navigate to="/chat" />} />
         <Route path="/chat" element={<Chat />} />
       </Routes>
+
     </BrowserRouter>
   </div>;
 }

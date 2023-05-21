@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { PaperClipIcon, XMarkIcon } from "@heroicons/react/20/solid/index.js";
+import {PaperAirplaneIcon, PaperClipIcon, XMarkIcon} from "@heroicons/react/20/solid/index.js";
 import Dropzone from "react-dropzone";
 
 function StandardMessageForm() {
@@ -52,10 +52,19 @@ function StandardMessageForm() {
                             </div>
                         )}
                     </Dropzone>
+
+                    <hr className="vertical-line"/>
+                    <PaperAirplaneIcon
+                    className="message-form-icon-airplane"
+                    onClick={() => {
+                        setPreview("");
+                        //handleSubmit();
+                    }}
+                    />
                 </div>
             </div>
         </div>
     );
-}
+};
 
 export default StandardMessageForm;
